@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import type { Project } from '../data/mockData.tsx';
 
 // --- SVG Icons (replaces react-icons import to resolve build error) ---
@@ -31,7 +33,13 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
-  if (!project) return null;
+  const [isClient, setIsClient] = useState(false);
+  
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!project || !isClient) return null;
 
   return (
     <div 

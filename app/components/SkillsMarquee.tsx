@@ -1,8 +1,16 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import { skills } from '../data/mockData'; 
 import { BentoGridItem } from './BentoGridItem';
 
 export const SkillsMarquee = () => {
+  const [isClient, setIsClient] = useState(false);
+  
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // We duplicate the skills array to create a seamless looping effect
   const extendedSkills = [...skills, ...skills];
 
@@ -10,7 +18,7 @@ export const SkillsMarquee = () => {
     <BentoGridItem className="lg:col-span-2 p-6 overflow-hidden ">
       <h3 className="text-xl font-bold text-white mb-6">MY TOOLBOX</h3>
       <div className="relative w-full overflow-hidden">
-        <div className="flex flex-nowrap animate-marquee">
+        <div className={`flex flex-nowrap ${isClient ? 'animate-marquee' : ''}`}>
           {extendedSkills.map((skill, index) => {
             const IconComponent = skill.logo;
             return (

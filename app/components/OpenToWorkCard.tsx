@@ -12,8 +12,8 @@ export const FreelanceCard = () => {
         <p className="font-medium text-white">AVAILABLE FOR FREELANCE</p>
       </div>
       <a 
-        href="/Shardendu_Mishra_Resume.pdf" 
-        download="Shardendu_Mishra_Resume.pdf" 
+        href="/Shardendu_s_Resume_fullstack (1).pdf" 
+        download="/Shardendu_s_Resume_fullstack (1).pdf" 
         className="w-full bg-white text-black p-3 rounded-lg flex justify-center items-center hover:bg-gray-200 transition-colors"
       >
         <span className="font-bold text-sm">DOWNLOAD RESUME</span>

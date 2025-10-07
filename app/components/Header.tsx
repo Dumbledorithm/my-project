@@ -5,7 +5,7 @@ import React from 'react';
  */
 export const Header = () => (
   <header className="flex justify-between sticky items-center mb-8">
-    <h1 className="text-xl font-bold text-white tracking-wider">SHARDENDU PORTFOLIO</h1>
+    <h1 className="text-xl font-bold text-white tracking-wider">SHARDENDU'S PORTFOLIO</h1>
     <nav className="hidden md:flex items-center space-x-4">
       <a href="#about" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">ABOUT</a>
       <a href="#work" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">WORK</a>
