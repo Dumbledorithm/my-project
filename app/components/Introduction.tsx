@@ -1,14 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BentoGridItem } from './BentoGridItem';
 
 /**
  * The main introduction/hero section of the portfolio.
  */
 export const Introduction = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
+    if (!isClient) return;
+    
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ 

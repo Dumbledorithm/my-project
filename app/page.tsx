@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { experiences } from './data/mockData';
 import { Header } from './components/Header';
