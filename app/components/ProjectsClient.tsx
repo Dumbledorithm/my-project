@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { projects, expertise } from '../data/mockData';
 import { BentoGridItem } from './BentoGridItem';
 import { ProjectModal } from './ProjectModal';
@@ -26,7 +27,7 @@ export const ProjectsClient = () => {
           {projects.map((project, index) => (
             <button key={index} className="group text-left" onClick={() => handleProjectClick(project)}>
               <div className="aspect-video rounded-lg overflow-hidden mb-2">
-                <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <Image src={project.imageUrl} alt={project.title} width={300} height={200} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
               </div>
               <h4 className="font-semibold text-white">{project.title}</h4>
               <p className="text-sm text-gray-400">{project.category}</p>

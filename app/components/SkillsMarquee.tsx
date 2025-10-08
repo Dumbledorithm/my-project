@@ -21,8 +21,9 @@ export const SkillsMarquee = () => {
         <div className={`flex flex-nowrap ${isClient ? 'animate-marquee' : ''}`}>
           {extendedSkills.map((skill, index) => {
             const IconComponent = skill.logo;
+            const uniqueKey = `${skill.name}-${index}`;
             return (
-              <div key={index} className="flex-shrink-0 w-32 group flex flex-col items-center justify-center p-4">
+              <div key={uniqueKey} className="flex-shrink-0 w-32 group flex flex-col items-center justify-center p-4">
                 <IconComponent className="h-10 w-10 text-gray-400 group-hover:text-white transition-colors" />
                 <span className="mt-2 text-sm text-gray-400 group-hover:text-white transition-colors">{skill.name}</span>
               </div>

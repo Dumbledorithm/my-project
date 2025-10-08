@@ -11,7 +11,7 @@ export const TestimonialsSection: React.FC<{ testimonials: Testimonial[] }> = ({
     <div className="testimonial-container flex overflow-x-auto space-x-6 pb-4">
       {testimonials.map((t, i) => (
         <div key={i} className="flex-shrink-0 w-72 bg-[#2a2a2a] p-5 rounded-lg">
-          <p className="text-sm text-gray-300">"{t.quote}"</p>
+          <p className="text-sm text-gray-300">&ldquo;{t.quote}&rdquo;</p>
           <div className="mt-4">
             <p className="font-bold text-white">{t.name}</p>
             <p className="text-xs text-gray-400">{t.title}{t.company && ` at ${t.company}`}</p>

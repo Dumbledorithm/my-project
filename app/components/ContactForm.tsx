@@ -35,7 +35,7 @@ export const ContactForm = () => {
         const errorData = await response.json();
         setStatus(`Error: ${errorData.error || 'Something went wrong.'}`);
       }
-    } catch (error) {
+    } catch {
       setStatus('Error: Could not send message.');
     }
   };

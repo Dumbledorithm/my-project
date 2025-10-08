@@ -30,7 +30,7 @@ export const Introduction = () => {
     <BentoGridItem className="p-6 lg:col-span-2 flex flex-col justify-between" id="about">
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">SHARDENDU MISHRA</h2>
-        <p className="text-base text-gray-400">Hey, I'm Shardendu Mishra, a full-stack developer from Lucknow who blends modern web tech with a passion for AI. I build smart, user-friendly applications.</p>
+        <p className="text-base text-gray-400">Hey, I&apos;m Shardendu Mishra, a full-stack developer from Lucknow who blends modern web tech with a passion for AI. I build smart, user-friendly applications.</p>
       </div>
       <div className="grid grid-cols-2 gap-4 mt-6">
         <a 

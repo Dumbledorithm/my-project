@@ -53,12 +53,6 @@ export type Skill = {
   logo: IconType | React.FC<{ className?: string }>;
 };
 
-const ShardenduMishraIcon: React.FC<{ className?: string }> = ({ className }) => (
-    <div className={`${className} flex items-center justify-center border-2 border-current rounded-full`}>
-        <span className="text-sm font-bold">SM</span>
-    </div>
-);
-
 // Single experience record
 export const experiences: Experience[] = [
   { 
@@ -82,7 +76,7 @@ export const projects: Project[] = [
     {
         title: "SecureDrop",
         category: "Secure file-sharing website",
-        imageUrl: "./secure-drop.png",
+        imageUrl: "/secure-drop.png",
         description: 'A web application that allows users to securely share files with end-to-end encryption. Files are automatically deleted after download or after a set expiration time, ensuring privacy and security.',
         techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Cryptography.js'],
         liveLink: 'https://secure-drop-v4.vercel.app/',
@@ -91,7 +85,7 @@ export const projects: Project[] = [
     {
         title: "ShilpKart",
         category: "A handicraft e-commerce platform",
-        imageUrl: "./shilpkart.png",
+        imageUrl: "/shilpkart.png",
         description: 'An online marketplace for Indian artisans to sell their handcrafted goods. Features include product listings, a secure payment gateway, and an artisan dashboard for managing inventory and sales.',
         techStack: ['Next.js', 'TailwindCSS', 'Stripe', 'Firebase'],
         liveLink: 'https://shilpkart-ten.vercel.app/',
@@ -100,7 +94,7 @@ export const projects: Project[] = [
     {
         title: "Financial Analyst AI",
         category: "AI_powered financial analysis tool",
-        imageUrl: "./FinancialAnalyst.png",
+        imageUrl: "/FinancialAnalyst.png",
         description: 'An AI tool that leverages large language models to analyze financial documents, stock market data, and news sentiment. It provides summaries, key insights, and trend forecasts to aid in investment decisions.',
         techStack: ['Next.js', 'FastAPI', 'Langchain', 'ChromaDB', 'GroqAPI'],
         liveLink: '#',
@@ -109,16 +103,13 @@ export const projects: Project[] = [
     {
         title: "AI code reviewer",
         category: "A tool that reviews code using AI",
-        imageUrl: "./AI-code-reviewer.png",
+        imageUrl: "/AI-code-reviewer.png",
         description: 'An automated code review tool that uses AI to detect bugs, suggest performance improvements, and ensure code style consistency. It integrates directly with GitHub pull requests to streamline the development workflow.',
         techStack: ['CrewAI', 'LangGraph', 'Next.js', 'GitHub API'],
         liveLink: '#',
         githubLink: '#',
     }
 ]
-
-const iconClass = "h-10 w-10 text-gray-400 group-hover:text-white transition-colors";
-
 
 export const expertise: Expertise[] = [
     {
