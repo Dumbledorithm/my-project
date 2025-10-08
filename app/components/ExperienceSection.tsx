@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { BentoGridItem } from './BentoGridItem';
 import type { Experience } from '../data/mockData';
